@@ -2,7 +2,7 @@
 
 namespace garredondo.evaluacion_t3.core.Services
 {
-    public interface IMapService<T> where T : IEntityWithID
+    public interface INetworkService<T> where T : IEntityWithID
     {
         /// <summary>
         /// Agrega un nodo
