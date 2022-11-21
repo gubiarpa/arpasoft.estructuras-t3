@@ -88,6 +88,25 @@ namespace garredondo.evaluacion_t3.infrastructure.Services
             /// Devuelve la lista de matches unida
             return matches;
         }
+
+        /// <summary>
+        /// Devuelve true si el nodo id1, id2 tienen como nodo adyacente al nodo idCommon.
+        /// </summary>
+        /// <param name="id1"></param>
+        /// <param name="id2"></param>
+        /// <param name="idCommon"></param>
+        /// <returns></returns>
+        public bool HaveSpecificMutualConnection(int id1, int id2, int idCommon)
+        {
+            /// Validamos que sean tres diferentes nodos
+            if (id1 == id2 || id1 == idCommon || id2 == idCommon)
+                return false;
+
+            /// Evalúa la adyacencia con el primer nodo
+            /// Si no son adyacentes, ya no evalúa el segundo;
+            /// Caso contrario, evalua el segundo y retorna su valor.
+            return IsAdjacent(id1, idCommon) && IsAdjacent(id2, idCommon);
+        }
         #endregion
 
         #region Utils
@@ -107,6 +126,22 @@ namespace garredondo.evaluacion_t3.infrastructure.Services
                 return false;
 
             return true;
+        }
+
+        /// <summary>
+        /// Devuelve si el nodo idNodeEvaluate es adyacente al nodo idNode.
+        /// </summary>
+        /// <param name="idNode">ID del nodo.</param>
+        /// <param name="idNodeEvaluate">ID del nodo a evaluar.</param>
+        /// <returns></returns>
+        private bool IsAdjacent(int idNode, int idNodeEvaluate)
+        {
+            var adjacentNodeList = GetAdjacentNodesByID(idNode);
+
+            if (adjacentNodeList == null || adjacentNodeList.Count() == 0)
+                return false;
+
+            return adjacentNodeList.Any(x => x.ID == idNodeEvaluate);
         }
         #endregion
     }

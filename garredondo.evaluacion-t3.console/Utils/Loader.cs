@@ -1,4 +1,5 @@
 ﻿using garredondo.evaluacion_t3.console.Entities;
+using garredondo.evaluacion_t3.core.Services;
 using garredondo.evaluacion_t3.infrastructure.Services;
 using System.Text;
 
@@ -7,11 +8,11 @@ namespace garredondo.evaluacion_t3.console.Utils
     public class Loader
     {
         #region Networking
-        private readonly NetworkService<Person> _networkingService;
+        private readonly INetworkService<Person> _networkingService;
 
-        public Loader()
+        public Loader(INetworkService<Person> networkingService)
         {
-            _networkingService = new NetworkService<Person>();
+            _networkingService = networkingService;
         }
         #endregion
 
@@ -27,10 +28,10 @@ namespace garredondo.evaluacion_t3.console.Utils
             _networkingService.AddNode(new Person(4) { DNI = GenerateRandomDNI(), FullName = "Rosa" });
             _networkingService.AddNode(new Person(5) { DNI = GenerateRandomDNI(), FullName = "Gabriel" });
             _networkingService.AddNode(new Person(6) { DNI = GenerateRandomDNI(), FullName = "Lourdes" });
-            _networkingService.AddNode(new Person(10) { DNI = GenerateRandomDNI(), FullName = "Ana" });
-            _networkingService.AddNode(new Person(7) { DNI = GenerateRandomDNI(), FullName = "Cristobal" });
-            _networkingService.AddNode(new Person(8) { DNI = GenerateRandomDNI(), FullName = "Blanca" });
-            _networkingService.AddNode(new Person(9) { DNI = GenerateRandomDNI(), FullName = "Greta" });
+            _networkingService.AddNode(new Person(7) { DNI = GenerateRandomDNI(), FullName = "Ana" });
+            _networkingService.AddNode(new Person(8) { DNI = GenerateRandomDNI(), FullName = "Cristobal" });
+            _networkingService.AddNode(new Person(9) { DNI = GenerateRandomDNI(), FullName = "Blanca" });
+            _networkingService.AddNode(new Person(10) { DNI = GenerateRandomDNI(), FullName = "Greta" });
         }
 
         /// <summary>
