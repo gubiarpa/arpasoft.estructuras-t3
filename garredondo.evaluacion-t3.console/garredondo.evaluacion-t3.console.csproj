@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\garredondo.evaluacion-t3.core\garredondo.evaluacion-t3.core.csproj" />
+    <ProjectReference Include="..\garredondo.evaluacion-t3.infrastructure\garredondo.evaluacion-t3.infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
