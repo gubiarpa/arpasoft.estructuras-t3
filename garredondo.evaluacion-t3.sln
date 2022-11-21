@@ -3,9 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{EE0D3711-A72B-4A92-BC6B-FEA6D4E99440}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{48B29976-CC3D-4245-89EE-B3DB94DF285A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "garredondo.evaluacion-t3.core", "garredondo.evaluacion-t3.core\garredondo.evaluacion-t3.core.csproj", "{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086} = {EE0D3711-A72B-4A92-BC6B-FEA6D4E99440}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1324843-E348-4C8E-B584-52250F269EA2}
