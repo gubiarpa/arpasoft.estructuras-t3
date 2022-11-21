@@ -26,13 +26,6 @@ namespace garredondo.evaluacion_t3.core.Services
         bool ConnectionExists(int id1, int id2);
 
         /// <summary>
-        /// Devuelve la lista de nodos adyacentes
-        /// </summary>
-        /// <param name="id">ID del nodo</param>
-        /// <returns>Devuelve la lista de nodos adyacentes</returns>
-        IEnumerable<T>? GetAdjacentNodesByID(int id);
-
-        /// <summary>
         /// Devuelve true si los nodos id1, id2 tienen una conexión en común con el nodo idCommon.
         /// </summary>
         /// <param name="id1"></param>

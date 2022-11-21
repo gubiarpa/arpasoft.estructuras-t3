@@ -105,7 +105,7 @@ namespace garredondo.evaluacion_t3.infrastructure.Services
             /// Evalúa la adyacencia con el primer nodo
             /// Si no son adyacentes, ya no evalúa el segundo;
             /// Caso contrario, evalua el segundo y retorna su valor.
-            return IsAdjacent(id1, idCommon) && IsAdjacent(id2, idCommon);
+            return ConnectionExists(id1, idCommon) && ConnectionExists(id2, idCommon);
         }
         #endregion
 
@@ -126,22 +126,6 @@ namespace garredondo.evaluacion_t3.infrastructure.Services
                 return false;
 
             return true;
-        }
-
-        /// <summary>
-        /// Devuelve si el nodo idNodeEvaluate es adyacente al nodo idNode.
-        /// </summary>
-        /// <param name="idNode">ID del nodo.</param>
-        /// <param name="idNodeEvaluate">ID del nodo a evaluar.</param>
-        /// <returns></returns>
-        private bool IsAdjacent(int idNode, int idNodeEvaluate)
-        {
-            var adjacentNodeList = GetAdjacentNodesByID(idNode);
-
-            if (adjacentNodeList == null || adjacentNodeList.Count() == 0)
-                return false;
-
-            return adjacentNodeList.Any(x => x.ID == idNodeEvaluate);
         }
         #endregion
     }

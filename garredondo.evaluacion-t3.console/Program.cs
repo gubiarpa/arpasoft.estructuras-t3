@@ -37,6 +37,7 @@ loader.LoadConnections();
 
 #region UserCommunication
 var id1 = GetIDFromUser("1er Nodo (ID)");
+
 var id2 = GetIDFromUser("2do Nodo (ID)");
 var idCommon = GetIDFromUser("Nodo en común (ID)");
 
