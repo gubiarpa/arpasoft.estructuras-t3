@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "garredondo.evaluacion-t3.co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "garredondo.evaluacion-t3.infrastructure", "garredondo.evaluacion-t3.infrastructure\garredondo.evaluacion-t3.infrastructure.csproj", "{01F87E88-5500-4004-8196-F24BE372BC3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "garredondo.evaluacion-t3.console", "garredondo.evaluacion-t3.console\garredondo.evaluacion-t3.console.csproj", "{EFD2A70E-57DD-48BA-AC49-4A9A0B134379}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{01F87E88-5500-4004-8196-F24BE372BC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F87E88-5500-4004-8196-F24BE372BC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F87E88-5500-4004-8196-F24BE372BC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD2A70E-57DD-48BA-AC49-4A9A0B134379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD2A70E-57DD-48BA-AC49-4A9A0B134379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD2A70E-57DD-48BA-AC49-4A9A0B134379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD2A70E-57DD-48BA-AC49-4A9A0B134379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3B5D7BC0-E4AE-4B07-9FAA-DCC575CB2086} = {EE0D3711-A72B-4A92-BC6B-FEA6D4E99440}
 		{01F87E88-5500-4004-8196-F24BE372BC3B} = {EE0D3711-A72B-4A92-BC6B-FEA6D4E99440}
+		{EFD2A70E-57DD-48BA-AC49-4A9A0B134379} = {48B29976-CC3D-4245-89EE-B3DB94DF285A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1324843-E348-4C8E-B584-52250F269EA2}
